@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    @font-face{
+        font-family: "Dongle-light";
+        src: url("Dongle/Dongle-Light.ttf");
+    }
+    @font-face{
+        font-family: "Dongle-regular";
+        src: url("Dongle/Dongle-Regular.ttf");
+    }
+    @font-face{
+        font-family: "Dongle-bold";
+        src: url("Dongle/Dongle-Bold.ttf");
+    }
+    .navbar{ 
+    background-color: rgb(242, 255, 0);
+    padding: 20px;
+    border-radius: 50px 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .navbar h2{
+    background-color:aqua;
+    padding-left: 3%;
+    border-radius: 50px 10px;
+    color: rgb(0, 0, 0);
+    }
+    
+    .hill{
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+    }
+    .hill-image img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .hill-content{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%,-50%);
+        width: 30%;
+        color: #fff;
+    }
+    .hill-content h1{
+        font-family: "Dongle-bold";
+        font-size: 4rem;
+    }
+    .hill-content p{
+        font-family: "Dongle-regular";
+        font-size: 1.8rem;
+    }
+    .destinations{
+        font-size: 2.4rem;
+        font-family: "Dongle-bold";
+        margin-bottom: 40px;
+        margin: 40px 80px;
+        text-align: center;
+    }
+    .destinations h2{
+        margin-bottom: 40px;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+    .destination-item img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .destination-item{
+        text-align: left;
+    }
+    .destination-item h3{
+        font-size: 2rem;
+    }
+    .destination-item p{
+        font-size: 1.4rem;
+        line-height: 1;
+        font-family: "Dongle-regular";
+    }
+    .about{
+         text-align: center;
+         padding: 100px;
+    }
+    .about h3{
+        font-family: "Dongle-bold";
+        font-size: 3rem;
+    }
+    .about p{
+        font-family: "Dongle-regular";
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+    .team-members{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team-member img {
+        display: block;
+        margin: 1000%;
+        width: 300px;
+        height: 400px;
+    }
+    .team-member h4{
+        font-family: "Dongle-bold";
+        font-size: 2rem;
+    }
+    .aboutme{
+        background-color: #0df1f1;
+    }
+    .aboutweb{
+        background-color: #efdc0b;
+    }
+    .destinations h2{
+    background-color: rgb(242, 255, 0);
+    padding: 20px;
+    border-radius: 50px 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+</style>
+
+<body>
+        <nav class="navbar">
+            <h2>WELCOME TO JHARKHAND</h1>
+        </nav>
+    <main>
+        <section class="hill">
+            <div class="hill image">
+                <img src="https://www.theindiatourism.com/images/Jharkhand-tour.jpg" alt="" height="500"
+                    image />
+
+            </div>
+            <!-- <div class="hill-content">
+                <p>Travel Blog</p>
+                <h1>Going Places</h1>
+                <p>I haven’t been everywhere, but it’s on my list</p>
+
+            </div> -->
+        </section>
+        <!--Destinations-->
+        <section class="destinations">
+            <h2>Popular destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg"
+                        alt="">
+                    <h3>Temples</h3>
+                    <p>
+                        Jharkhand boasts a vast collection of temples ranging from the prehistoric times to the modern era. The temples in the state offer a glimpse into the rich and diverse cultural heritage of India. Some of the famous temples in the state include the Baidyanath Temple in Deoghar, the Sun Temple in Ranchi, the Jagannath Temple in Ranchi, the Pahari Mandir in Ranchi, and the Angrabadi Temple in Khunti.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img
+                        src="https://www.travelworldplanet.com/wp-content/uploads/2022/05/Nanda-Devi-National-Park.jpg"
+                        alt="">
+                    <h3>Zoo & Parks</h3>
+                    <p>
+                        There are many zoos in Jharkhand. This is all the tourist places listed in this state. Top cities in Jharkhand with popular zoos are Bokaro Steel City, Jamshedpur and Ranchi etc.And There are many Parks in Jharkhand.Jharkhand is an eastern state of India and is known for its beautiful forests, Jain temples and waterfalls. One of the most famous national parks of the country is in this State, called ‘Betla National Park’ known for its tigers. The state is known for its bio-diversity that has a wonderful range of animals as well as birds. Let us look at the top five national parks in Jharkhand.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://tourism.jharkhand.gov.in/app-assets/image/slider/46.webp" alt="">
+                    <h3>Rivers,Mountains</h3>
+                    <p>
+                        They are: Damodar, Brahmani, Koel, Subarnarekha and Kharkai rivers. The higher watersheds of these rivers stretch out within the Jharkhand state. Much of the Jharkhand state is still enclosed by forest. Forests sustain the population of Elephants and tigers.They are: Damodar, Brahmani, Koel, Subarnarekha and Kharkai rivers. The higher watersheds of these rivers stretch out within the Jharkhand state. Much of the Jharkhand state is still enclosed by forest. Forests sustain the population of Elephants and tigers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="destinations">
+            <h2>Featured Hotel</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img
+                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/480979597.jpg?k=49c6ef1a1eb73e947de35dc9d2ecc4e297dda91054bc5dd6555627cc7fbd318e&o=&hp=1"
+                        alt="">
+                    <h3>Midwaay Resort </h3>
+                    <p>
+                        Nestled in the city of Ramgarh, Midwaay Resort, Patratu, Ramgarh,
+                        offers travelers a heightened level of comfort, fine accommodation and safety.
+                        H7Q9+JF, Talapur Talatanr, Jharkhand 829119.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://ak-d.tripcdn.com/images/02229120008jn71ueB7DD_R_800_525.jpg"
+                        alt="">
+                    <h3>Chanakya Bnr Hotel</h3>
+                    <p>
+                        Chanakya BNR Hotel in Ranchi is a perfect fusion of convenience, luxury.
+
+                        Take a refreshing dip into the outdoor swimming pool or get yourself a soothing spa session.
+                        Continue your fitness regime by working out in the modern gym.
+                        Stay well connected to Ranchi Junction, which is just 500 m away.
+
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/a3/d9/a5/exterior.jpg?w=700&h=-1&s=1"
+                        alt="">
+                    <h3>Radisson Blu Hotel Ranchi</h3>
+                    <p>
+                        Opulent rooms, multiple dining options, an exclusive spa and bespoke experiences await you for a
+                        memorable stay at this lavish property.
+
+                        Rejuvenate your mind, body and soul with holistic therapies and treatments at the on-site spa.
+                        Enjoy the property's close proximity to Ranchi Railway Station which is only 2 km away.
+                        Satiate your palate with the finest selection of Indian and Chinese delicacies at the in-house
+                        restaurant, Waterfront.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="destinations">
+            <h2>Featured Activities</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img
+                        src="https://www.seawatersports.com/img/newimage/activies/slide/river-rafting-in-manali-in-himachal-pradesh-combo.jpg"
+                        alt="">
+                    <h3>Water Sports, Giridih</h3>
+                    <p>
+                        Around 8 km North-East of Giridih, this water reservoir is among the best spots providing you
+                        water related adventure sports and bird-watching activities. You can get an amazing panoramic
+                        view of Khandoli site from a watch tower and 600 feet high hillock. You can get the adventure of
+                        elephant and Camel Safari and many other amusement facilities like Boating, Rock-climbing
+                        ,Parasailing and Kayaking.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://i.ytimg.com/vi/qlGuVcjF2RM/maxresdefault.jpg" alt="">
+                    <h3>Ropeway At Trikut</h3>
+                    <p>
+                        The three peaks of the TRIKUT hill signify the holy trinity of Brahma , Vishnu and Mahesh.
+                        Pilgrims visit this holy site all around the year. DRIL has built a cable car that takes
+                        passengers to the top of the hill offering a great view of the holy town of Jasidih, Deogarh.The
+                        steep climbing angle and lack of a road to the top of the hill presented a challenge to the
+                        construction.
+
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://www.seawatersports.com/img/newimage/activies/paragliding.jpg"
+                        alt="">
+                    <h3>Parasailing training, Giridih</h3>
+                    <p>
+                        Giridih offers a remarkable space for an exciting aero sport parasailing, in which you will be
+                        sailing in the air up to an altitude of 300 feet through a half cut orange shaped parachute
+                        called 'Parasail' that is dragged through a rope linked to a jeep on land or by a motorboat
+                        above water. You will be having a thrilling and exciting experience at this height in the
+                        absence of any engine, sound or pilot.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="destinations">
+            <h2>Popular cities</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/5e/c0/46/drone-shot-of-the-valley.jpg?w=600&h=500&s=1"
+                        alt="">
+                    <h3>Ranchi</h3>
+                    <p>
+                        Ranchi, the capital city of Jharkhand, is the most developed city in the state. The city has
+                        several large industries, including the Heavy Engineering Corporation, and is a hub for trade
+                        and commerce in eastern India.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://images.bhaskarassets.com/thumb/1800x1800/web2images/521/2020/10/11/40_1602376625.jpg"
+                        alt="">
+                    <h3>Jamshedpur</h3>
+                    <p>
+                        Jamshedpur, also known as Tata Nagar, is a planned city located in the eastern part of
+                        Jharkhand. The city is known for its steel industry and is home to the Tata Steel plant, which
+                        is one of the largest steel plants in India.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-41141351252fbb9e3f105202a1446586-lq" alt="">
+                    <h3>Dhanbad</h3>
+                    <p>
+                        Dhanbad is a city located in the western part of Jharkhand and is known for its coal industry.
+                        The city has several large coal mines and power plants and is a hub for mining and related
+                        industries.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="destinations">
+
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="https://assets.telegraphindia.com/telegraph/2023/Apr/1680475501_new-project-2023-04-03t041450-204.jpg"
+                        alt="">
+                    <h3>Bokaro</h3>
+                    <p>
+                        Bokaro is a city located in the eastern part of Jharkhand and is known for its steel industry.
+                        The city has several large steel plants, including the Bokaro Steel Plant, which is one of the
+                        largest steel plants in India.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/b7/cb/64/photo1jpg.jpg?w=700&h=500&s=1"
+                        alt="">
+                    <h3>Hazaribagh</h3>
+                    <p>
+                        Hazaribagh is a city located in the central part of Jharkhand and is known for its scenic
+                        beauty. The city has several tourist attractions, including the famous Hazaribagh Wildlife
+                        Sanctuary.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://i.pinimg.com/1200x/b9/5a/14/b95a14b5d20379b95fe25c5684a5b171.jpg" alt="">
+                    <h3>Deoghar</h3>
+                    <p>
+                        Deoghar is a city located in the eastern part of Jharkhand and is known for its religious
+                        significance. The city has several temples, including the famous Baba Baidyanath Temple, which
+                        attracts thousands of visitors every year.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="destinations">
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="https://kolkataweekends.com/img/leisure/giridih/square/10.jpg" alt="">
+                    <h3>Giridih</h3>
+                    <p>
+                        Giridih is a city located in the northern part of Jharkhand and is known for its natural beauty.
+                        The city is surrounded by hills and forests and is a popular tourist destination.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://www.seawatersports.com/img/newimage/places/hirni-water-falls.jpg" alt="">
+                    <h3>Ramgarh</h3>
+                    <p>
+                        Ramgarh is a city located in the central part of Jharkhand and is known for its coal industry.
+                        The city has several large coal mines and power plants.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/e2/a5/9a/jubilee-park.jpg?w=600&h=400&s=1"
+                        alt="">
+                    <h3>Chaibasa</h3>
+                    <p>
+                        Chaibasa is a city located in the western part of Jharkhand and is known for its mineral
+                        resources. The city has several large mines, including the famous Noamundi Iron Mine.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about">
+            
+            <div class="aboutweb">
+                <h3>About Website</h3>
+                <p>
+                    In conclusion, these are the top 10 developed cities in Jharkhand that have witnessed significant
+                    growth and development in recent years. These cities offer excellent opportunities for business,
+                    education, healthcare, and tourism. If you're planning to visit Jharkhand, be sure to explore these
+                    cities and experience their unique culture and heritage.<p>This is My 1st Project. In this project I use only HTML and CSS. </p>
+                    <p>In this project i decsribe the all top tourist place in the Jharkhand.</p>
+                </p>
+            </div>
+            <div class="aboutme">
+                <h3>About Me</h3>
+                <img src="Nishupic2.jpeg" width="400" height="400" alt="Nishu Kumar">
+                <h2>Nishu Kumar</h2><br>
+
+                <p>
+                    Hello, I am Nishu Kumar. Currently I am pursuing MCA at KL University .</p>
+                    <p>My id number 2201600079.I am from Dhanbad,Jharkhand(828101)</p>
+                <p>Email:-2201600079mca@gmail.com</p>
+                
+            </div>
+
+            <br><br><div class="thank">
+                <img src="https://www.thankyoudiva.com/images/thank-you-for-visiting-my-website.jpg" alt="Thank you for visiting">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
